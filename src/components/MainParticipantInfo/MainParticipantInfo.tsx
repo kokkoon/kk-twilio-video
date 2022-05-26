@@ -115,7 +115,7 @@ interface MainParticipantInfoProps {
   children: React.ReactNode;
 }
 
-export default function   MainParticipantInfo({ participant, children }: MainParticipantInfoProps) {
+export default function MainParticipantInfo({ participant, children }: MainParticipantInfoProps) {
   const classes = useStyles();
   const { room } = useVideoContext();
   const localParticipant = room!.localParticipant;

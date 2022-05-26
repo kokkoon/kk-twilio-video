@@ -10,7 +10,7 @@ import { User } from 'firebase';
 export interface StateContextType {
   error: TwilioError | Error | null;
   setError(error: TwilioError | Error | null): void;
-  getToken(name: string, room: string, passcode?: string): Promise<{ room_type: RoomType; token: string }>;
+  getToken(name: string, room: string, passcode?: string, room_data?: string): Promise<{ room_type: RoomType; token: string, room_data?: string }>;
   user?: User | null | { displayName: undefined; photoURL: undefined; passcode?: string };
   signIn?(passcode?: string): Promise<void>;
   signOut?(): Promise<void>;
@@ -114,6 +114,7 @@ export default function AppStateProvider(props: React.PropsWithChildren<{}>) {
     return contextValue
       .getToken(name, room)
       .then(res => {
+        localStorage.setItem("room", JSON.stringify(res.room_data))
         setRoomType(res.room_type);
         setIsFetching(false);
         return res;
