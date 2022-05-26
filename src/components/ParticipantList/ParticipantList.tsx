@@ -59,7 +59,7 @@ export default function ParticipantList() {
     >
       <div className={classes.scrollContainer}>
         <div className={classes.innerScrollContainer}>
-          <Participant participant={localParticipant} isLocalParticipant={true} />
+          {/* <Participant participant={localParticipant} isLocalParticipant={true} /> */}
           {participants.map(participant => {
             const isSelected = participant === selectedParticipant;
             const hideParticipant =
