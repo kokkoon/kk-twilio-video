@@ -17,12 +17,8 @@ const useStyles = makeStyles((theme: Theme) => {
       position: 'relative',
       height: '100%',
       display: 'grid',
-      gridTemplateColumns: `1fr ${theme.sidebarWidth}px`,
-      gridTemplateRows: '100%',
-      [theme.breakpoints.down('sm')]: {
-        gridTemplateColumns: `100%`,
-        gridTemplateRows: `calc(100% - ${totalMobileSidebarHeight}) ${totalMobileSidebarHeight}`,
-      },
+      gridTemplateColumns: `100%`,
+      gridTemplateRows: `calc(100% - ${totalMobileSidebarHeight}) ${totalMobileSidebarHeight}`,
     },
     rightDrawerOpen: { gridTemplateColumns: `1fr ${theme.sidebarWidth}px ${theme.rightDrawerWidth}px` },
   };

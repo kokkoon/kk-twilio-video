@@ -53,10 +53,10 @@ const useStyles = makeStyles((theme: Theme) => ({
     zIndex: 1,
   },
   fullWidth: {
-    gridArea: '1 / 1 / 2 / 3',
-    [theme.breakpoints.down('sm')]: {
-      gridArea: '1 / 1 / 3 / 3',
-    },
+    gridArea: '1 / 1 / 3 / 3',
+    // [theme.breakpoints.down('sm')]: {
+    //   gridArea: '1 / 1 / 3 / 3',
+    // },
   },
   avatarContainer: {
     display: 'flex',

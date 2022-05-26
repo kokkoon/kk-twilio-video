@@ -11,27 +11,25 @@ import useScreenShareParticipant from '../../hooks/useScreenShareParticipant/use
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     container: {
-      overflowY: 'auto',
+      overflowY: 'initial',
       background: 'rgb(79, 83, 85)',
-      gridArea: '1 / 2 / 1 / 3',
+      gridArea: '2 / 1 / 3 / 3',
       zIndex: 5,
-      [theme.breakpoints.down('sm')]: {
-        gridArea: '2 / 1 / 3 / 3',
-        overflowY: 'initial',
-        overflowX: 'auto',
-        display: 'flex',
-      },
+      overflowX: 'auto',
+      display: 'flex',
     },
     transparentBackground: {
       background: 'transparent',
     },
     scrollContainer: {
       display: 'flex',
-      justifyContent: 'center',
+      justifyContent: 'right',
+      marginRight: '25px',
     },
     innerScrollContainer: {
-      width: `calc(${theme.sidebarWidth}px - 3em)`,
-      padding: '1.5em 0',
+      width: 'auto',
+      padding: `${theme.sidebarMobilePadding}px`,
+      display: 'flex',
       [theme.breakpoints.down('sm')]: {
         width: 'auto',
         padding: `${theme.sidebarMobilePadding}px`,

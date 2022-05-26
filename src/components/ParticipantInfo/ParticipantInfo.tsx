@@ -18,19 +18,24 @@ import useParticipantIsReconnecting from '../../hooks/useParticipantIsReconnecti
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     container: {
+      width: '160px',
+      height: '90px',
+      fontSize: '12px',
+      paddingTop: '88px',
+      marginRight: '8px',
+      marginBottom: '0',
+
       position: 'relative',
       display: 'flex',
       alignItems: 'center',
-      height: 0,
+      // height: 0,
       overflow: 'hidden',
-      marginBottom: '0.5em',
       '& video': {
         filter: 'none',
         objectFit: 'contain !important',
       },
       borderRadius: '4px',
-      border: `${theme.participantBorderWidth}px solid rgb(245, 248, 255)`,
-      paddingTop: `calc(${(9 / 16) * 100}% - ${theme.participantBorderWidth}px)`,
+      border: `${theme.participantBorderWidth}px solid #f50057`,
       background: 'black',
       [theme.breakpoints.down('sm')]: {
         height: theme.sidebarMobileHeight,
