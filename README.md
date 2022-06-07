@@ -1,18 +1,13 @@
-# Twilio Video React App
+# React Conference/Webinar Room by Twilio Video
 
+This project demonstrates the extension from the original Twilio Video App React, below is the link to the Twilio Video React App to which this project is based on.
 [![CircleCI](https://circleci.com/gh/twilio/twilio-video-app-react.svg?style=svg)](https://circleci.com/gh/twilio/twilio-video-app-react)
 
 ## What is it
 
-This application demonstrates a multi-party video application built with [Twilio's Programmable Video JS SDK](https://github.com/twilio/twilio-video.js), [Twilio's Conversations JS SDK](https://www.npmjs.com/package/@twilio/conversations), and [Create React App](https://github.com/facebook/create-react-app).
+Over the pendemic period, many of us must have the opportunity to join an online meeting, and/or joing a online presentation session hosted by colleagues or other parties. You must have realized, the meeting setup/layout session is not ideal for webina or teacher-student purpose, where in a webinar, we found it more interactive or engaged when the presenter video is always showing on the main sharing screen with presentation/screen as the background of the shared main window.
 
-- Deploy to [Twilio Serverless](https://www.twilio.com/docs/runtime/functions-assets-api) in just a few minutes
-- No other infrastructure is required
-- No code changes are required before your first deploy
-- There is no cost associated with deploying the app
-- Go Rooms usage is free, however [standard usage charges](https://www.twilio.com/video/pricing) apply for Programmable Video when using the app with all other Room types. The chat feature is built using the Conversations API and is free-of-cost up to 200 monthly active users, [standard usage charges](https://www.twilio.com/conversations/pricing) apply thereafter.
-
-![App Preview](https://user-images.githubusercontent.com/12685223/94631109-cfca1c80-0284-11eb-8b72-c97276cf34e4.png)
+This project is with intention if you found the same, and would like create a webinar type of video conferencing room of your preference. With the sample provided by the Twilio Video React App demonstrates a multi-party video application built with [Twilio's Programmable Video JS SDK](https://github.com/twilio/twilio-video.js), [Twilio's Conversations JS SDK](https://www.npmjs.com/package/@twilio/conversations), and [Create React App](https://github.com/facebook/create-react-app). This project is to extend the setup with a "Lecturer or Techer-student layout", where it can be used for webinar setup with the presenter sharing his/her screen (i.e. presentation deck/screen), and with the presenter's camera/video laid on one of the shared screen's corners.
 
 ## Prerequisites
 
